@@ -9,9 +9,6 @@
 package numeroaleatorio;
 
 
-// IMPORTAÇÃO DE BIBLIOTECAS:
-import classes.Numero;
-
 
 public class NumeroAleatorio {
 
@@ -20,8 +17,8 @@ public class NumeroAleatorio {
     public static void main(String[] args) {
    
         // DECLARAÇÃO DE VARIAVEIS E OBJETOS:
-        Numero gerador = new Numero();
-        gerador.gerando_numero(10, 5);
+        Menu menu_gerador = new Menu();
+        menu_gerador.exibir_menu();
         
     }
     

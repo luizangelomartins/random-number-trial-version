@@ -25,9 +25,21 @@ public class Numero {
     public void gerando_numero( int quantia_a_gerar, int limite_gerador ) {
         
         int numero = 0;
-        numero = aleatorio.nextInt(limite_gerador);
-        System.out.println(numero);
-         
+        int repetidor = 0;
+        System.out.println("");
+        
+            while( repetidor != quantia_a_gerar ) {
+                
+                numero = aleatorio.nextInt(limite_gerador);
+                System.out.println("ALEATÓRIO [ " +(repetidor+1)+" ] - "+numero);
+                repetidor++;
+                
+            }
+        
+        System.out.println("");
+        System.out.println("NÚMEROS GERADOS COM SUCESSO!");
+        System.out.println("");
+        
     }
     
     
