@@ -26,7 +26,7 @@ public class Numero {
         
         
         // VARIAVEIS:
-        int aux = 0;
+        int aux0 = 0;
         int repetidor1 = 0;
         int repetidor2 = 0;
         int vetor_numero[] = new int[quantia_a_gerar];
@@ -43,15 +43,15 @@ public class Numero {
             
             
             // ORDENANDO O VETOR:
-            for ( int i = 0; i < vetor_numero.length; i++ ) {
+            for ( int aux1 = 0; aux1 < vetor_numero.length; aux1++ ) {
                 
-                for ( int j = 0; j < vetor_numero.length; j++) {
+                for ( int aux2 = 0; aux2 < vetor_numero.length; aux2++) {
                     
-                    if ( vetor_numero[i] < vetor_numero[j] ) {
+                    if ( vetor_numero[aux1] < vetor_numero[aux2] ) {
                         
-                        aux = vetor_numero[i];
-                        vetor_numero[i] = vetor_numero[j];
-                        vetor_numero[j] = aux;
+                        aux0 = vetor_numero[aux1];
+                        vetor_numero[aux1] = vetor_numero[aux2];
+                        vetor_numero[aux2] = aux0;
                         
                     }
                     
